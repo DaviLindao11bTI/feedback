@@ -5,13 +5,8 @@
     font-family: "Overpass", sans-serif;
     -webkit-font-smoothing: antialiased;
 }
-
 :root {
     --dark-blue: #262E38;
-    --light-grey: #969fad;
-    --medium-grey: #7c8798;
-    --orange: #fc7614;
-    --white: #fff;
     --light-grey: #969FAD;
     --medium-grey: #7C8798;
     --orange: #FC7614;
@@ -19,43 +14,59 @@
     --very-dark-blue: #131518;
     --black-gradient: radial-gradient(98.96% 98.96% at 50% 0%, #232a34 0%, #181e27 100%);
 }
-
 body {
     background-color: var(--very-dark-blue);
     height: 100svh;
-
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .card {
     background: var(--black-gradient);
     max-width: 412px;
     padding: 32px;
     border-radius: 30px;
 }
-
 .card h1 {
     color: var(--white);
     font-size: 28px;
     margin-bottom: 15px;
 }
-
 .card p {
     color: var(--light-grey);
     font-size: 15px;
     line-height: 24px;
+    margin-bottom: 24px;
 }
 
 .estrela {
     background-color: var(--dark-blue);
     width: 48px;
     height: 48px;
-
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+
     margin-bottom: 30px;
+}
+
+.notas {
+    display:flex;
+    justify-content: space-between;
+}
+.notas button {
+    width: 51px;
+    height: 51px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    border-radius: 50%;
+    border: none;
+    color: var(--medium-grey);
+    background-color: var(--dark-blue);
+}
+
+.notas button:hover{
+
 }
