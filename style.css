@@ -38,7 +38,6 @@ body {
     line-height: 24px;
     margin-bottom: 24px;
 }
-
 .estrela {
     background-color: var(--dark-blue);
     width: 48px;
@@ -47,10 +46,8 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-
     margin-bottom: 30px;
 }
-
 .notas {
     display:flex;
     justify-content: space-between;
@@ -65,8 +62,41 @@ body {
     border: none;
     color: var(--medium-grey);
     background-color: var(--dark-blue);
+
+    transition: all ease-in-out 0.3s;
 }
 
 .notas button:hover{
 
+    color: var(--white);
+    background-color: var(--orange);
+    cursor: pointer;
+}
+
+.notas button:focus {
+    color: var(--white);
+    background-color: var(--light-grey);
+}
+
+.card > button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 30px;
+    background-color: var(--orange);
+    border: none;
+    border-radius: 22px;
+
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--white);
+
+    transition: all ease-in-out 0.3s;
+}
+
+.card >button:hover {
+    color: var(--orange);
+    background-color: var(--white);
+    cursor: pointer;
 }
